@@ -1,3 +1,6 @@
+<%= turbo_frame_tag user do %>
+<dialog open>
+
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div style="color: red">
@@ -20,3 +23,6 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+</dialog>
+<% end # turbo_frame_tag user %>
